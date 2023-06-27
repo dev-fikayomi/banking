@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #ffff;
+    --var-text-color: #919191;
+    --var-bg-blue: #2697FF;
+    --var-light-blue: #7dbffd;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 665px;
+    background-image: url(waterbg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0px;
+    z-index: -2;
+}
+
+main {
+    width: 30%;
+    min-width: 340px;
+    margin: 30px auto;
+    padding: 25px 10px;
+    background-color: var(--white);
+    border-radius: 5px;
+    color: #414141;
+}
+
+.logo {
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.receipt {
+    font-size: .9rem;
+    margin-bottom: 30px;
+    padding: 0 15px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #c7c6c6;
+    margin-bottom: 10px;
+}
+
+.receipt-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 15px;
+}
+
+.receipt-description section {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    position: relative;
+    z-index: 3;
+}
+
+.water-mark {
+    display: flex;
+    width: 250px;
+    transform: rotate(-45deg);
+    position: absolute;
+    margin: -230px auto 0 60px;
+    opacity: .4;
+    z-index: 1;
+}
